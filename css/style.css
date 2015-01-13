@@ -1,0 +1,177 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+
+}
+#myCarousel .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+
+}
+.list-group-item {
+	border-radius:0px;
+	cursor:pointer;
+}
+.list-group .active {
+	background-color:#eee;	
+}
+.list-group-item:hover {
+	background-color:#f8f8f8;	
+}
+.clear{clear:both;}/* clear float */
+#quizz
+{
+	height: 370px;
+	position: relative;
+	border: 1px solid #f8f8f8;
+	border-radius: 3;
+}
+.question .quizz_button
+{position: relative;
+
+
+}
+.quizz_suiv{
+	position: absolute;
+	bottom: 25%;
+	right: 20%;
+
+}
+.passe_quizz{
+	position: absolute;
+	bottom: 25%;
+
+	padding: 10px;
+}
+
+.question .quizz_suiv,.validate-btn
+{	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	}
+	.question .reset-btn
+{	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	}
+	.quizz-titre
+	{
+		font-size: 24;
+		font-weight: bolder;
+		color: #555555;
+		background-color:#f8f8f8;
+		padding: 10px;
+	}
+ #quizz_intro
+ {
+
+ }
+ .menu
+ {
+ 	padding: 10px;
+ 	margin-top: 10px;
+ }
+.color1
+{
+	color: #158cba;
+
+}
+.rep_correcte
+{
+	background-color:#B2E0B2;
+}
+.rep_incorrecte
+{
+	background-color: #FFC2C2;
+}
+@import "http://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
+
+.cata_cours{
+margin-top: 15px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-box-shadow: 0 1px 2px 1px rgba(0,0,0,0.25);
+box-shadow: 0 1px 2px 1px rgba(0,0,0,0.25);
+background-color: #fff;
+-webkit-border-radius: 1px;
+border-radius: 1px;
+}
+.mb20 { margin-bottom: 20px; } 
+
+hgroup { padding-left: 15px; border-bottom: 1px solid #ccc; }
+hgroup h1 { font: 500 normal 1.625em "Roboto",Arial,Verdana,sans-serif; color: #2a3644; margin-top: 0; line-height: 1.15; }
+hgroup h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; color: #2a3644; margin: 0; padding-bottom: 10px; }
+
+.search-result .thumbnail { border-radius: 0 !important; }
+.search-result:first-child { margin-top: 0 !important; }
+.search-result { margin-top: 20px; }
+.search-result .col-md-2 { border-right: 1px dotted #ccc; min-height: 140px; }
+.search-result ul { padding-left: 0 !important; list-style: none;  }
+.search-result ul li { font: 400 normal .85em "Roboto",Arial,Verdana,sans-serif;  line-height: 30px; }
+.search-result ul li i { padding-right: 5px; }
+.search-result .col-md-7 { position: relative; }
+.search-result h3 { font: 500 normal 1.375em "Roboto",Arial,Verdana,sans-serif; margin-top: 0 !important; margin-bottom: 10px !important; }
+.search-result h3 > a, .search-result i { color: #248dc1 !important; }
+.search-result p { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; } 
+.search-result span.plus { position: absolute; right: 0; top: 126px; }
+.search-result span.plus a { background-color: #248dc1; padding: 5px 5px 3px 5px; }
+.search-result span.plus a:hover { background-color: #414141; }
+.search-result span.plus a i { color: #fff !important; }
+.search-result span.border { display: block; width: 97%; margin: 0 15px; border-bottom: 1px dotted #ccc; }
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-7f5x2v');
+	src:url('fonts/icomoon.eot?#iefix-7f5x2v') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-7f5x2v') format('woff'),
+		url('fonts/icomoon.ttf?-7f5x2v') format('truetype'),
+		url('fonts/icomoon.svg?-7f5x2v#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+	content: "\e600";
+}
+.icon-checkmark:before {
+	content: "\e601";
+}
+.correction_titre
+    {
+  
+    background-color: #158cba;
+    padding: 10px;
+    color: #fff;
+    font-weight: bolder;
+    margin: 0;
+
+}
+#correction_input
+{
+
+    font-weight: bold;
+    border-left: 2px solid rgb(217, 228, 245);
+    padding: 100px;
+    border-right: 2px solid rgb(217, 228, 245);
+    border-bottom: 2px solid rgb(217, 228, 245);
+    margin: 0px;
+    background-color: #f8f8f8;
+
+}

@@ -1,0 +1,100 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+<style type="text/css">
+#contenu {
+  text-align: justify;
+  overflow-y: scroll;
+height: 500px;
+overflow-wrap:break-word;
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?-7f5x2v');
+  src:url('fonts/icomoon.eot?#iefix-7f5x2v') format('embedded-opentype'),
+    url('fonts/icomoon.woff?-7f5x2v') format('woff'),
+    url('fonts/icomoon.ttf?-7f5x2v') format('truetype'),
+    url('fonts/icomoon.svg?-7f5x2v#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.7;
+  font-size: 14px;
+  color: #fff;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\e600";
+}
+.icon-checkmark:before {
+  content: "\e601";
+}
+
+</style>
+
+    
+    <div class="container">
+      <div class="row">
+          <div class="col-md-8">
+            <div class="panel panel-default lab">
+              <div class="panel-body">
+                <div id="quizz" class="text-center"  >
+                  <div id="quizz_intro">
+                  <button class =" btn btn-primary passe_quizz " onclick="resume();">sauter</button>
+                  </div>  
+                </div> 
+              </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    <!-- /.container -->
+
+<!-- scripts -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+    <!-- load quizz -->
+    <script type="text/javascript" src="js/quizz.1.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+       // l'objet quizz est chargé depuis la Base données
+      quizz={"id":"64","temp":10,"titre":"quizz sur java","questions":[{"id":"65","question":"Java est un langage","choix":[{"id":"106","text":"Compil\u00e9"},{"id":"107","text":" Interpr\u00e9t\u00e9"},{"id":"108","text":"Compil\u00e9 et interpr\u00e9t\u00e9"},{"id":"109","text":"Ni compil\u00e9 ni interpr\u00e9t\u00e9"}],"reponse":"108"},{"id":"66","question":"Java est un langage d\u00e9velopp\u00e9 par","choix":[{"id":"110","text":"Hewlett-Packard"},{"id":"111","text":"Sun Microsystems"},{"id":"112","text":"Microsoft"},{"id":"113","text":"Oracle"}],"reponse":"111"},{"id":"67","question":"Une classe peut impl\u00e9menter :","choix":[{"id":"114","text":"plusieurs interfaces mais doit \u00e9tendre une seul classe"},{"id":"115","text":"plusieurs classes mais doit \u00e9tendre une seule interface"},{"id":"116","text":"plusieurs classes et peut \u00e9tendre plusieurs interface"},{"id":"117","text":" une seule interface et \u00a0\u00e9tendre une seule classe"}],"reponse":"117"}]};
+        create_quizz($("#quizz"));
+    });
+    </script>
+
+    
+
+  </body>
+</html>

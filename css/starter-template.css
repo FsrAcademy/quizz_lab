@@ -1,0 +1,46 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+
+}
+#myCarousel .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+
+}
+.list-group-item {
+	border-radius:0px;
+	cursor:pointer;
+}
+.list-group .active {
+	background-color:#eee;	
+}
+.list-group-item:hover {
+	background-color:#eee;	
+}
+.clear{clear:both;}/* clear float */
+#quizz
+{
+	height: 370px;
+}
+.question .quizz_button
+{position: relative;
+
+}
+.question .quizz_suiv
+{position: relative;
+	
+	padding: 10px;
+	}
+ #quizz_intro
+ {
+
+ }
+ .menu
+ {
+ 	padding: 10px;
+ 	margin-top: 10px;
+ }
